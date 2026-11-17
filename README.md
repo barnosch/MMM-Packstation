@@ -30,8 +30,10 @@ git clone https://github.com/barnosch/MMM-Packstation.git
 },
 ```
 
-Postal code and station number are the ones shown in the DHL Standortfinder,  
-https://www.dhl.de/de/privatkunden/pakete-empfangen/standorte-finden.html
+Postal code and station number are the ones shown in the DHL Standortfinder, 
+replace the XXXXX with your postal code
+[https://www.dhl.de/de/privatkunden/pakete-empfangen/standorte-finden.html](https://www.dhl.de/de/privatkunden/dhl-standorte-finden.html?address=XXXXXX)
+
 
 
 
