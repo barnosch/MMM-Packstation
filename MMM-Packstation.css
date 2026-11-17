@@ -1,0 +1,27 @@
+.MMM-Packstation .packstation-table {
+	font-size: 1.4em;
+	margin: 0 auto;
+	border-spacing: 8px 0;
+}
+
+.MMM-Packstation .packstation-size {
+	font-weight: 400;
+	color: #999;
+	padding-right: 4px;
+}
+
+.MMM-Packstation .packstation-count {
+	font-weight: 700;
+	color: #fff;
+	text-align: right;
+}
+
+.MMM-Packstation .packstation-count.empty {
+	color: #e74c3c;
+}
+
+.MMM-Packstation .packstation-size.total,
+.MMM-Packstation .packstation-count.total {
+	padding-left: 16px;
+	border-left: 1px solid #444;
+}
