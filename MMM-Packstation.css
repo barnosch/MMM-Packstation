@@ -1,27 +1,85 @@
-.MMM-Packstation .packstation-table {
-	font-size: 1.4em;
-	margin: 0 auto;
-	border-spacing: 8px 0;
+.MMM-Packstation .packstation-sizes {
+	display: flex;
+	gap: 10px;
+	align-items: stretch;
+}
+
+.MMM-Packstation .packstation-item {
+	background: rgba(255, 255, 255, 0.06);
+	border-radius: 10px;
+	padding: 10px 12px 12px;
+	text-align: center;
+	min-width: 52px;
 }
 
 .MMM-Packstation .packstation-size {
+	font-size: 11px;
 	font-weight: 400;
-	color: #999;
-	padding-right: 4px;
+	letter-spacing: 1.5px;
+	color: #aaa;
 }
 
 .MMM-Packstation .packstation-count {
+	font-size: 26px;
 	font-weight: 700;
+	line-height: 1.2;
 	color: #fff;
-	text-align: right;
+	margin: 2px 0 8px;
 }
 
-.MMM-Packstation .packstation-count.empty {
-	color: #e74c3c;
+.MMM-Packstation .packstation-count.none {
+	color: #555;
 }
 
-.MMM-Packstation .packstation-size.total,
-.MMM-Packstation .packstation-count.total {
+.MMM-Packstation .packstation-status {
+	height: 4px;
+	border-radius: 2px;
+	background: rgba(255, 255, 255, 0.12);
+	overflow: hidden;
+}
+
+.MMM-Packstation .packstation-status-fill {
+	height: 100%;
+	border-radius: 2px;
+	transition: width 0.5s ease;
+}
+
+/* Traffic light, like the DHL Standortfinder */
+.MMM-Packstation .status-green .packstation-status-fill {
+	width: 100%;
+	background: #4caf50;
+}
+
+.MMM-Packstation .status-amber .packstation-status-fill {
+	width: 55%;
+	background: #ffb300;
+}
+
+.MMM-Packstation .status-red .packstation-status-fill {
+	width: 100%;
+	background: #e53935;
+}
+
+.MMM-Packstation .status-red .packstation-count {
+	color: #ef5350;
+}
+
+.MMM-Packstation .status-none .packstation-status-fill {
+	width: 0;
+}
+
+.MMM-Packstation .packstation-item.total {
+	background: transparent;
 	padding-left: 16px;
-	border-left: 1px solid #444;
+	margin-left: 6px;
+	border-left: 1px dashed #444;
+	border-radius: 0;
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.MMM-Packstation .packstation-item.total .packstation-size {
+	color: #666;
 }
