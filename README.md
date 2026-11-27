@@ -4,6 +4,8 @@ MagicMirror² module showing free DHL Packstation compartments (S/M/L/XL).
 Port of the Home Assistant integration
 (https://github.com/TylonHH/dhl-packstation-availability).  
 Uses the public DHL Postfinder endpoint, no login or API key required.  
+<img width="578" height="237" alt="DHL Packstation Anzeige" src="https://github.com/user-attachments/assets/f23228f4-f790-41d4-98cc-fa001c582fb2" />
+
 
 ## Installation
 
